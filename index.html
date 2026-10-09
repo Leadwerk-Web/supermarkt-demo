@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>REVIEW REQUIRED · Klarer Nutzen für deine Kundschaft</title>
-  <meta name="description" content="REVIEW REQUIRED: präzise Einleitung mit Angebot, Zielgruppe und konkretem Nutzen.">
-  <meta name="leadwerk:focus-keyphrase" content="REVIEW REQUIRED · Hauptangebot Zielgruppe Ort">
+  <title>Lavendel Markt · Dein Supermarkt in Musterstadt</title>
+  <meta name="description" content="Lavendel Markt in Musterstadt: frisches Obst und Gemüse aus der Region, Backstube, Frischetheke, Wochenangebote und Lieferservice. Mo–Sa 7–22 Uhr.">
+  <meta name="leadwerk:focus-keyphrase" content="Supermarkt Musterstadt">
   <meta property="og:image" content="assets/og-default.webp">
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
@@ -15,51 +15,144 @@
   <a class="skip-link" href="#content">Zum Inhalt</a>
   <header class="site-header">
     <nav class="wrap nav" aria-label="Hauptnavigation">
-      <a class="brand" href="index.html"><img data-lw-global="brand.logo" data-lw-type="image" src="assets/logo.svg" alt="REVIEW REQUIRED Logo"><span data-lw-global="brand.name" data-lw-type="text">REVIEW REQUIRED</span></a>
-      <div class="nav-links"><a href="leistungen.html">Leistungen</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a><a class="button" href="kontakt.html">Gespräch starten</a></div>
+      <a class="brand" href="index.html"><img data-lw-global="brand.logo" data-lw-type="image" src="assets/logo.svg" alt="Lavendel Markt Logo" width="38" height="38"><span data-lw-global="brand.name" data-lw-type="text">Lavendel Markt</span></a>
+      <div class="nav-links" id="site-menu"><a href="supermarkt.html">Angebote</a><a href="leistungen.html">Sortiment</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a><a class="button" href="kontakt.html#oeffnungszeiten">Öffnungszeiten</a></div>
       <div class="site-language-switcher" data-lw-language-switcher-slot hidden></div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">Menü öffnen</span></button>
     </nav>
   </header>
   <main id="content">
     <section class="hero" data-lw-section="hero">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">REVIEW REQUIRED · Kategorie</p>
-          <h1 data-lw-field="hero.title" data-lw-type="richtext">Ein starkes Ergebnis, verständlich auf den Punkt gebracht.</h1>
-          <p class="lead" data-lw-field="hero.intro" data-lw-type="textarea">REVIEW REQUIRED: Erkläre in zwei Sätzen, für wen das Angebot gedacht ist, welches Problem es löst und warum dein Unternehmen die richtige Wahl ist.</p>
-          <div class="actions"><a class="button" href="kontakt.html" data-lw-field="hero.primary_cta" data-lw-type="page_reference">Unverbindlich anfragen</a><a class="button button--ghost" href="leistungen.html">Leistungen ansehen</a></div>
+          <p class="eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Dein Frischmarkt in Musterstadt</p>
+          <h1 data-lw-field="hero.title" data-lw-type="richtext">Frisch, regional und fair – jeden Tag.</h1>
+          <p class="lead" data-lw-field="hero.intro" data-lw-type="textarea">Obst und Gemüse von Höfen aus der Region, Brot aus unserer Backstube und eine Frischetheke mit persönlicher Beratung. Bei Lavendel Markt erledigst du den ganzen Wocheneinkauf an einem Ort.</p>
+          <div class="actions"><a class="button" href="supermarkt.html" data-lw-field="hero.primary_cta" data-lw-type="page_reference">Wochenangebote ansehen</a><a class="button button--ghost" href="leistungen.html" data-lw-field="hero.secondary_cta" data-lw-type="page_reference">Sortiment entdecken</a></div>
+          <ul class="market-facts" data-lw-repeater="hero.facts">
+            <li data-lw-item-key="hours"><span data-lw-field="hero.fact" data-lw-type="text">Mo–Sa 7–22 Uhr</span></li>
+            <li data-lw-item-key="parking"><span data-lw-field="hero.fact" data-lw-type="text">120 Gratis-Parkplätze</span></li>
+            <li data-lw-item-key="delivery"><span data-lw-field="hero.fact" data-lw-type="text">Lieferservice</span></li>
+          </ul>
         </div>
-        <div class="hero-art"><img data-lw-field="hero.image" data-lw-type="image" src="assets/hero.svg" alt="Abstrakte Vorschau der Leistungen von REVIEW REQUIRED"></div>
+        <div class="hero-photo">
+          <img data-lw-field="hero.image" data-lw-type="image" src="assets/photos/photo-bananas-aisle.webp" alt="Reife Bananen in der Obstabteilung, im Hintergrund eine Kundin mit Einkaufswagen" width="960" height="640" fetchpriority="high">
+          <p class="price-tag"><strong data-lw-field="hero.tag_value" data-lw-type="text">−25 %</strong><span data-lw-field="hero.tag_label" data-lw-type="text">auf Obst der Woche</span></p>
+        </div>
       </div>
     </section>
+
     <section class="section section--surface" data-lw-section="proof">
       <div class="wrap">
-        <p class="eyebrow" data-lw-field="proof.eyebrow" data-lw-type="text">Vertrauen</p>
-        <h2 data-lw-field="proof.title" data-lw-type="richtext">Belege statt leere Versprechen.</h2>
+        <p class="eyebrow" data-lw-field="proof.eyebrow" data-lw-type="text">Darum Lavendel Markt</p>
+        <h2 data-lw-field="proof.title" data-lw-type="richtext">Ein Markt, der seine Nachbarschaft kennt.</h2>
         <div class="grid" data-lw-repeater="proof.items">
-          <article class="card reveal" data-lw-item-key="result"><strong class="metric" data-lw-field="proof.value" data-lw-type="text">REVIEW</strong><h3 data-lw-field="proof.label" data-lw-type="text">Messbares Ergebnis</h3><p data-lw-field="proof.copy" data-lw-type="textarea">Verifizierte Kennzahl und Kontext ergänzen.</p></article>
-          <article class="card reveal" data-lw-item-key="experience"><strong class="metric" data-lw-field="proof.value" data-lw-type="text">REVIEW</strong><h3 data-lw-field="proof.label" data-lw-type="text">Erfahrung</h3><p data-lw-field="proof.copy" data-lw-type="textarea">Jahre, Projekte oder Zertifizierung belegen.</p></article>
-          <article class="card reveal" data-lw-item-key="response"><strong class="metric" data-lw-field="proof.value" data-lw-type="text">REVIEW</strong><h3 data-lw-field="proof.label" data-lw-type="text">Verlässlichkeit</h3><p data-lw-field="proof.copy" data-lw-type="textarea">Konkretes Serviceversprechen ergänzen.</p></article>
+          <article class="card reveal" data-lw-item-key="result"><strong class="metric" data-lw-field="proof.value" data-lw-type="text">12.000</strong><h3 data-lw-field="proof.label" data-lw-type="text">Artikel im Sortiment</h3><p data-lw-field="proof.copy" data-lw-type="textarea">Vom Grundnahrungsmittel bis zur Spezialität, darunter mehr als 1.500 Bio-Produkte.</p></article>
+          <article class="card reveal" data-lw-item-key="experience"><strong class="metric" data-lw-field="proof.value" data-lw-type="text">85</strong><h3 data-lw-field="proof.label" data-lw-type="text">Erzeuger aus der Region</h3><p data-lw-field="proof.copy" data-lw-type="textarea">Obst, Gemüse, Eier und Milch kommen von Höfen im Umkreis von 50 Kilometern.</p></article>
+          <article class="card reveal" data-lw-item-key="response"><strong class="metric" data-lw-field="proof.value" data-lw-type="text">7–22</strong><h3 data-lw-field="proof.label" data-lw-type="text">Uhr geöffnet, Montag bis Samstag</h3><p data-lw-field="proof.copy" data-lw-type="textarea">Frühaufsteher und Spätentschlossene kaufen bei uns ganz entspannt ein.</p></article>
         </div>
       </div>
     </section>
-    <section class="section" data-lw-section="services">
-      <div class="wrap split">
-        <div><p class="eyebrow" data-lw-field="services.eyebrow" data-lw-type="text">Leistungen</p><h2 data-lw-field="services.title" data-lw-type="richtext">Ein Angebot, das sich an echten Bedürfnissen orientiert.</h2></div>
-        <div><p class="lead" data-lw-field="services.intro" data-lw-type="textarea">REVIEW REQUIRED: Beschreibe die drei wichtigsten Leistungsbereiche und den Unterschied zum Wettbewerb.</p><a class="button" href="leistungen.html">Alle Leistungen</a></div>
+
+    <section class="section" data-lw-section="offers_teaser">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow" data-lw-field="offers_teaser.eyebrow" data-lw-type="text">Diese Woche günstiger</p><h2 data-lw-field="offers_teaser.title" data-lw-type="richtext">Unsere Top-Angebote</h2></div>
+          <p data-lw-field="offers_teaser.note" data-lw-type="textarea">Gültig von Montag bis Samstag, solange der Vorrat reicht. Alle Preise sind Demo-Preise.</p>
+        </div>
+        <div class="grid" data-lw-repeater="offers_teaser.items">
+          <article class="card offer offer--photo reveal" data-lw-item-key="strawberries">
+            <div class="offer-media"><img data-lw-field="offers_teaser.image" data-lw-type="image" src="assets/photos/photo-strawberries.webp" alt="Frische rote Erdbeeren in einer Glasschale" width="960" height="640" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers_teaser.badge" data-lw-type="text">−25 %</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers_teaser.name" data-lw-type="text">Erdbeeren aus der Region</h3>
+              <p class="offer-unit" data-lw-field="offers_teaser.unit" data-lw-type="text">500-g-Schale · 1 kg = 5,98 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers_teaser.price" data-lw-type="text">2,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers_teaser.old_price" data-lw-type="text">3,99 €</span></span></p>
+            </div>
+          </article>
+          <article class="card offer offer--photo reveal" data-lw-item-key="bread">
+            <div class="offer-media"><img data-lw-field="offers_teaser.image" data-lw-type="image" src="assets/photos/photo-bread-loaf.webp" alt="Rundes Bauernbrot auf einem Holzbrett, zwei Scheiben angeschnitten" width="960" height="640" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers_teaser.badge" data-lw-type="text">Frisch gebacken</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers_teaser.name" data-lw-type="text">Bauernbrot aus der Backstube</h3>
+              <p class="offer-unit" data-lw-field="offers_teaser.unit" data-lw-type="text">750-g-Laib · 1 kg = 3,32 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers_teaser.price" data-lw-type="text">2,49 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers_teaser.old_price" data-lw-type="text">2,99 €</span></span></p>
+            </div>
+          </article>
+          <article class="card offer offer--photo reveal" data-lw-item-key="coffee">
+            <div class="offer-media"><img data-lw-field="offers_teaser.image" data-lw-type="image" src="assets/photos/photo-coffee-beans.webp" alt="Nahaufnahme frisch gerösteter Kaffeebohnen" width="960" height="636" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers_teaser.badge" data-lw-type="text">−30 %</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers_teaser.name" data-lw-type="text">Kaffee, ganze Bohne</h3>
+              <p class="offer-unit" data-lw-field="offers_teaser.unit" data-lw-type="text">1-kg-Packung · 1 kg = 11,99 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers_teaser.price" data-lw-type="text">11,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers_teaser.old_price" data-lw-type="text">16,99 €</span></span></p>
+            </div>
+          </article>
+        </div>
+        <div class="actions"><a class="button" href="supermarkt.html" data-lw-field="offers_teaser.cta" data-lw-type="page_reference">Alle Wochenangebote</a></div>
       </div>
     </section>
-    <section class="section section--surface" data-lw-section="faq">
+
+    <section class="section section--surface" data-lw-section="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow" data-lw-field="services.eyebrow" data-lw-type="text">Sortiment</p><h2 data-lw-field="services.title" data-lw-type="richtext">Alles für deinen Wocheneinkauf.</h2></div>
+          <p data-lw-field="services.intro" data-lw-type="textarea">Von der Obstabteilung bis zum Getränkemarkt: kurze Wege, klare Gänge und Mitarbeitende, die gern weiterhelfen.</p>
+        </div>
+        <div class="tile-grid" data-lw-repeater="services.departments">
+          <a class="tile reveal" href="leistungen.html#obst-gemuese" data-lw-item-key="produce"><img data-lw-field="services.tile_image" data-lw-type="image" src="assets/photos/photo-produce-crates.webp" alt="Kisten mit Kartoffeln, Äpfeln, Bohnen und Tomaten in der Obst- und Gemüseabteilung" width="960" height="640" loading="lazy" decoding="async"><span class="tile-body"><h3 data-lw-field="services.tile_title" data-lw-type="text">Obst &amp; Gemüse</h3><p data-lw-field="services.tile_copy" data-lw-type="text">Täglich frisch und saisonal</p></span></a>
+          <a class="tile reveal" href="leistungen.html#backstube" data-lw-item-key="bakery"><img data-lw-field="services.tile_image" data-lw-type="image" src="assets/photos/photo-bakery-counter.webp" alt="Bäckertheke mit Brotkörben und frischem Gebäck" width="960" height="720" loading="lazy" decoding="async"><span class="tile-body"><h3 data-lw-field="services.tile_title" data-lw-type="text">Backstube</h3><p data-lw-field="services.tile_copy" data-lw-type="text">Brötchen ab 7 Uhr</p></span></a>
+          <a class="tile reveal" href="leistungen.html#frischetheke" data-lw-item-key="counter"><img data-lw-field="services.tile_image" data-lw-type="image" src="assets/photos/photo-cheese-counter.webp" alt="Verschiedene Käselaibe an der Frischetheke" width="960" height="640" loading="lazy" decoding="async"><span class="tile-body"><h3 data-lw-field="services.tile_title" data-lw-type="text">Frischetheke</h3><p data-lw-field="services.tile_copy" data-lw-type="text">Käse, Wurst und Fisch</p></span></a>
+          <a class="tile reveal" href="leistungen.html#getraenke" data-lw-item-key="drinks"><img data-lw-field="services.tile_image" data-lw-type="image" src="assets/photos/photo-wine-bottles.webp" alt="Reihe von Weinflaschen im Getränkeregal" width="960" height="640" loading="lazy" decoding="async"><span class="tile-body"><h3 data-lw-field="services.tile_title" data-lw-type="text">Getränkemarkt</h3><p data-lw-field="services.tile_copy" data-lw-type="text">Wasser, Saft, Wein und Bier</p></span></a>
+        </div>
+        <div class="actions"><a class="button button--ghost" href="leistungen.html">Ganzes Sortiment ansehen</a></div>
+      </div>
+    </section>
+
+    <section class="section" data-lw-section="promo">
+      <div class="wrap promo">
+        <div class="promo-copy">
+          <p class="eyebrow" data-lw-field="promo.eyebrow" data-lw-type="text">Lieferservice &amp; Click &amp; Collect</p>
+          <h2 data-lw-field="promo.title" data-lw-type="richtext">Bestellt ist schneller als gedacht.</h2>
+          <p class="lead" data-lw-field="promo.copy" data-lw-type="textarea">Schick uns deine Einkaufsliste – wir packen alles frisch zusammen. Abholung nach zwei Stunden oder Lieferung am selben Tag im Umkreis von 5 km.</p>
+          <div class="actions"><a class="button" href="kontakt.html" data-lw-field="promo.cta" data-lw-type="page_reference">Einkaufsliste senden</a></div>
+        </div>
+        <div class="promo-media"><img data-lw-field="promo.image" data-lw-type="image" src="assets/photos/photo-grocery-basket.webp" alt="Geflochtener Einkaufskorb mit Avocados, Paprika, Tomaten und Spargel" width="960" height="640" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+
+    <section class="section section--surface" data-lw-section="benefits">
+      <div class="wrap">
+        <p class="eyebrow" data-lw-field="benefits.eyebrow" data-lw-type="text">Service im Markt</p>
+        <h2 data-lw-field="benefits.title" data-lw-type="richtext">Einkaufen ohne Umwege.</h2>
+        <ul class="feature-grid" data-lw-repeater="benefits.items">
+          <li class="feature reveal" data-lw-item-key="parking"><strong data-lw-field="benefits.name" data-lw-type="text">Kostenlos parken</strong><span data-lw-field="benefits.copy" data-lw-type="text">120 Parkplätze direkt vor dem Eingang, davon 6 mit E-Ladesäule.</span></li>
+          <li class="feature reveal" data-lw-item-key="deposit"><strong data-lw-field="benefits.name" data-lw-type="text">Pfandautomat</strong><span data-lw-field="benefits.copy" data-lw-type="text">Flaschen und Kisten zurückgeben, Bon an der Kasse einlösen.</span></li>
+          <li class="feature reveal" data-lw-item-key="payment"><strong data-lw-field="benefits.name" data-lw-type="text">Kontaktlos zahlen</strong><span data-lw-field="benefits.copy" data-lw-type="text">Karte, Smartphone oder bar – auch an den Selbstbedienungskassen.</span></li>
+          <li class="feature reveal" data-lw-item-key="organic"><strong data-lw-field="benefits.name" data-lw-type="text">Bio &amp; regional</strong><span data-lw-field="benefits.copy" data-lw-type="text">Klar gekennzeichnet am Regal, damit du schnell findest, was du suchst.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" data-lw-section="faq">
       <div class="wrap"><p class="eyebrow">FAQ</p><h2 data-lw-field="faq.title" data-lw-type="text">Häufige Fragen</h2>
         <div class="faq" data-lw-repeater="faq.items">
-          <details data-lw-item-key="start"><summary data-lw-field="faq.question" data-lw-type="text">Wie beginnt die Zusammenarbeit?</summary><p data-lw-field="faq.answer" data-lw-type="richtext">REVIEW REQUIRED: Beschreibe den ersten konkreten Schritt.</p></details>
-          <details data-lw-item-key="fit"><summary data-lw-field="faq.question" data-lw-type="text">Für wen ist das Angebot geeignet?</summary><p data-lw-field="faq.answer" data-lw-type="richtext">REVIEW REQUIRED: Nenne ideale Voraussetzungen und ehrliche Grenzen.</p></details>
-          <details data-lw-item-key="timing"><summary data-lw-field="faq.question" data-lw-type="text">Wie schnell sehen wir ein Ergebnis?</summary><p data-lw-field="faq.answer" data-lw-type="richtext">REVIEW REQUIRED: Gib eine realistische Zeitspanne und Abhängigkeiten an.</p></details>
+          <details data-lw-item-key="start"><summary data-lw-field="faq.question" data-lw-type="text">Wann habt ihr geöffnet?</summary><p data-lw-field="faq.answer" data-lw-type="richtext">Montag bis Samstag von 7:00 bis 22:00 Uhr. Die Backstube verkauft ab 7:00 Uhr frische Brötchen. An Sonn- und Feiertagen bleibt der Markt geschlossen.</p></details>
+          <details data-lw-item-key="fit"><summary data-lw-field="faq.question" data-lw-type="text">Gibt es Parkplätze?</summary><p data-lw-field="faq.answer" data-lw-type="richtext">Ja, 120 kostenlose Parkplätze direkt am Markt, davon 6 mit E-Ladesäule. Überdachte Fahrradständer findest du neben dem Eingang.</p></details>
+          <details data-lw-item-key="timing"><summary data-lw-field="faq.question" data-lw-type="text">Liefert ihr auch nach Hause?</summary><p data-lw-field="faq.answer" data-lw-type="richtext">Ja. Bestellungen bis 14 Uhr liefern wir noch am selben Tag im Umkreis von 5 km, ab 40 € Bestellwert kostenlos.</p></details>
         </div>
       </div>
     </section>
-    <section class="section"><div class="wrap cta" data-lw-section="final_cta"><h2 data-lw-field="final_cta.title" data-lw-type="richtext">Lass uns herausfinden, ob es passt.</h2><p class="lead" data-lw-field="final_cta.copy" data-lw-type="textarea">Ein kurzes Gespräch schafft Klarheit über Ziel, Aufwand und nächsten Schritt.</p><a class="button" href="kontakt.html">Gespräch anfragen</a></div></section>
+
+    <section class="section section--surface"><div class="wrap cta" data-lw-section="final_cta"><h2 data-lw-field="final_cta.title" data-lw-type="richtext">Schau vorbei – wir freuen uns auf dich.</h2><p class="lead" data-lw-field="final_cta.copy" data-lw-type="textarea">Musterstraße 1 in Musterstadt, mit kostenlosen Parkplätzen und Bushaltestelle direkt vor der Tür.</p><a class="button" href="kontakt.html#oeffnungszeiten">Anfahrt &amp; Öffnungszeiten</a></div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-grid"><div><strong data-lw-global="footer.company" data-lw-type="text">REVIEW REQUIRED</strong><p data-lw-global="footer.tagline" data-lw-type="text">REVIEW REQUIRED · Nutzenversprechen</p></div><nav class="footer-links" aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="kontakt.html">Kontakt</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid footer-grid--wide">
+        <div class="footer-brand"><strong data-lw-global="footer.company" data-lw-type="text">Lavendel Markt</strong><p data-lw-global="footer.tagline" data-lw-type="text">Dein Frischmarkt für den Wocheneinkauf – regional, fair und mit Herz.</p></div>
+        <div class="footer-col"><h2 data-lw-global="footer.visit_title" data-lw-type="text">Besuch</h2><p data-lw-global="footer.address" data-lw-type="textarea">Musterstraße 1, 12345 Musterstadt</p><p data-lw-global="footer.hours" data-lw-type="text">Mo–Sa 7:00–22:00 Uhr</p></div>
+        <div class="footer-col"><h2 data-lw-global="footer.contact_title" data-lw-type="text">Kontakt</h2><p><a data-lw-global="footer.phone" data-lw-type="text" href="tel:+49123456789">0123 456789</a></p><p><a data-lw-global="footer.email" data-lw-type="email" href="mailto:kontakt@lavendel-markt.example">kontakt@lavendel-markt.example</a></p></div>
+        <nav class="footer-col" aria-label="Seiten"><h2 data-lw-global="footer.nav_title" data-lw-type="text">Entdecken</h2><div class="footer-links"><a href="supermarkt.html">Wochenangebote</a><a href="leistungen.html">Sortiment</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></div></nav>
+      </div>
+      <div class="footer-bottom"><p data-lw-global="footer.copyright" data-lw-type="text">© 2026 Lavendel Markt · Demo-Website mit fiktiven Angaben · Fotos: StockSnap (CC0)</p><nav class="footer-links" aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div>
+    </div>
+  </footer>
 </body>
 </html>

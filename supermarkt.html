@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Supermarkt-Demo · Frische, Wochenangebote und Öffnungszeiten</title>
-  <meta name="description" content="Demo-Seite für einen Supermarkt: aktuelle Wochenangebote, Sortiment von Obst bis Frischetheke, Services wie Click &amp; Collect sowie Öffnungszeiten und Anfahrt.">
-  <meta name="robots" content="noindex">
-  <meta name="leadwerk:focus-keyphrase" content="Supermarkt Wochenangebote">
+  <title>Wochenangebote · Lavendel Markt</title>
+  <meta name="description" content="Die aktuellen Wochenangebote von Lavendel Markt: Erdbeeren, Bauernbrot, Bergkäse, Kaffee, Mineralwasser und Pasta zu Demo-Preisen, gültig Montag bis Samstag.">
+  <meta name="leadwerk:focus-keyphrase" content="Wochenangebote Supermarkt">
   <meta property="og:image" content="assets/og-default.webp">
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
@@ -16,26 +15,30 @@
   <a class="skip-link" href="#content">Zum Inhalt</a>
   <header class="site-header">
     <nav class="wrap nav" aria-label="Hauptnavigation">
-      <a class="brand" href="index.html"><img data-lw-global="brand.logo" data-lw-type="image" src="assets/logo.svg" alt="REVIEW REQUIRED Logo"><span data-lw-global="brand.name" data-lw-type="text">REVIEW REQUIRED</span></a>
-      <div class="nav-links"><a href="leistungen.html">Leistungen</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a><a class="button" href="kontakt.html">Gespräch starten</a></div>
+      <a class="brand" href="index.html"><img data-lw-global="brand.logo" data-lw-type="image" src="assets/logo.svg" alt="Lavendel Markt Logo" width="38" height="38"><span data-lw-global="brand.name" data-lw-type="text">Lavendel Markt</span></a>
+      <div class="nav-links" id="site-menu"><a href="supermarkt.html" aria-current="page">Angebote</a><a href="leistungen.html">Sortiment</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a><a class="button" href="kontakt.html#oeffnungszeiten">Öffnungszeiten</a></div>
       <div class="site-language-switcher" data-lw-language-switcher-slot hidden></div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">Menü öffnen</span></button>
     </nav>
   </header>
   <main id="content">
     <section class="hero" data-lw-section="market_hero">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow" data-lw-field="market_hero.eyebrow" data-lw-type="text">Dein Supermarkt in der Nachbarschaft</p>
-          <h1 data-lw-field="market_hero.title" data-lw-type="richtext">Frisch einkaufen, ohne Umwege.</h1>
-          <p class="lead" data-lw-field="market_hero.intro" data-lw-type="textarea">Täglich frisches Obst und Gemüse, Brot aus der Backstube und eine bediente Frischetheke. Alles für den Wocheneinkauf an einem Ort, mit kurzen Wegen und freundlicher Beratung.</p>
-          <div class="actions"><a class="button" href="#angebote" data-lw-field="market_hero.primary_cta" data-lw-type="url">Wochenangebote ansehen</a><a class="button button--ghost" href="#besuch" data-lw-field="market_hero.secondary_cta" data-lw-type="url">Öffnungszeiten</a></div>
+          <p class="eyebrow" data-lw-field="market_hero.eyebrow" data-lw-type="text">Angebote der Woche</p>
+          <h1 data-lw-field="market_hero.title" data-lw-type="richtext">Diese Woche günstiger einkaufen.</h1>
+          <p class="lead" data-lw-field="market_hero.intro" data-lw-type="textarea">Jeden Montag starten neue Angebote aus allen Abteilungen – von frischen Erdbeeren bis zum Kistenpreis im Getränkemarkt. Alle Preise inklusive Mehrwertsteuer, zuzüglich Pfand.</p>
+          <div class="actions"><a class="button" href="#angebote" data-lw-field="market_hero.primary_cta" data-lw-type="url">Zu den Angeboten</a><a class="button button--ghost" href="#besuch" data-lw-field="market_hero.secondary_cta" data-lw-type="url">Öffnungszeiten</a></div>
           <ul class="market-facts" data-lw-repeater="market_hero.facts">
-            <li data-lw-item-key="hours"><span data-lw-field="market_hero.fact" data-lw-type="text">Mo–Sa 7–22 Uhr</span></li>
-            <li data-lw-item-key="parking"><span data-lw-field="market_hero.fact" data-lw-type="text">Kostenlose Parkplätze</span></li>
-            <li data-lw-item-key="delivery"><span data-lw-field="market_hero.fact" data-lw-type="text">Lieferservice</span></li>
+            <li data-lw-item-key="hours"><span data-lw-field="market_hero.fact" data-lw-type="text">Gültig Mo–Sa</span></li>
+            <li data-lw-item-key="parking"><span data-lw-field="market_hero.fact" data-lw-type="text">Solange der Vorrat reicht</span></li>
+            <li data-lw-item-key="delivery"><span data-lw-field="market_hero.fact" data-lw-type="text">Auch im Lieferservice</span></li>
           </ul>
         </div>
-        <div class="hero-art"><img data-lw-field="market_hero.image" data-lw-type="image" src="assets/market-hero.svg" alt="Illustration einer Einkaufstüte mit Gemüse, Brot, Äpfeln und Milch neben einem Rabattschild" width="960" height="760"></div>
+        <div class="hero-photo">
+          <img data-lw-field="market_hero.image" data-lw-type="image" src="assets/photos/photo-vegetable-crate.webp" alt="Kiste mit Karotten, Gurken, Tomaten, Zitrusfrüchten und Grünkohl von oben" width="960" height="691" fetchpriority="high">
+          <p class="price-tag"><strong data-lw-field="market_hero.tag_value" data-lw-type="text">bis −30 %</strong><span data-lw-field="market_hero.tag_label" data-lw-type="text">diese Woche</span></p>
+        </div>
       </div>
     </section>
 
@@ -46,41 +49,53 @@
           <p data-lw-field="offers.note" data-lw-type="textarea">Demo-Preise. Gültig von Montag bis Samstag, solange der Vorrat reicht. Abgabe nur in haushaltsüblichen Mengen.</p>
         </div>
         <div class="grid" data-lw-repeater="offers.items">
-          <article class="card offer reveal" data-lw-item-key="strawberries">
-            <span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">−25 %</span>
-            <h3 data-lw-field="offers.name" data-lw-type="text">Erdbeeren aus der Region</h3>
-            <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">500-g-Schale · 1 kg = 5,98 €</p>
-            <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">2,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">3,99 €</span></span></p>
+          <article class="card offer offer--photo reveal" data-lw-item-key="strawberries">
+            <div class="offer-media"><img data-lw-field="offers.image" data-lw-type="image" src="assets/photos/photo-strawberries.webp" alt="Frische rote Erdbeeren in einer Glasschale" width="960" height="640" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">−25 %</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers.name" data-lw-type="text">Erdbeeren aus der Region</h3>
+              <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">500-g-Schale · 1 kg = 5,98 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">2,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">3,99 €</span></span></p>
+            </div>
           </article>
-          <article class="card offer reveal" data-lw-item-key="bread">
-            <span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">Frisch gebacken</span>
-            <h3 data-lw-field="offers.name" data-lw-type="text">Bauernbrot aus der Backstube</h3>
-            <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">750-g-Laib · 1 kg = 3,32 €</p>
-            <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">2,49 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">2,99 €</span></span></p>
+          <article class="card offer offer--photo reveal" data-lw-item-key="bread">
+            <div class="offer-media"><img data-lw-field="offers.image" data-lw-type="image" src="assets/photos/photo-bread-loaf.webp" alt="Rundes Bauernbrot auf einem Holzbrett, zwei Scheiben angeschnitten" width="960" height="640" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">Frisch gebacken</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers.name" data-lw-type="text">Bauernbrot aus der Backstube</h3>
+              <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">750-g-Laib · 1 kg = 3,32 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">2,49 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">2,99 €</span></span></p>
+            </div>
           </article>
-          <article class="card offer reveal" data-lw-item-key="cheese">
-            <span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">−20 %</span>
-            <h3 data-lw-field="offers.name" data-lw-type="text">Bergkäse von der Frischetheke</h3>
-            <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">je 100 g · 1 kg = 19,90 €</p>
-            <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">1,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">2,49 €</span></span></p>
+          <article class="card offer offer--photo reveal" data-lw-item-key="cheese">
+            <div class="offer-media"><img data-lw-field="offers.image" data-lw-type="image" src="assets/photos/photo-cheese-counter.webp" alt="Verschiedene Käselaibe an der Frischetheke" width="960" height="640" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">−20 %</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers.name" data-lw-type="text">Bergkäse von der Frischetheke</h3>
+              <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">je 100 g · 1 kg = 19,90 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">1,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">2,49 €</span></span></p>
+            </div>
           </article>
-          <article class="card offer reveal" data-lw-item-key="coffee">
-            <span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">−30 %</span>
-            <h3 data-lw-field="offers.name" data-lw-type="text">Kaffee, ganze Bohne</h3>
-            <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">1-kg-Packung · 1 kg = 11,99 €</p>
-            <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">11,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">16,99 €</span></span></p>
+          <article class="card offer offer--photo reveal" data-lw-item-key="coffee">
+            <div class="offer-media"><img data-lw-field="offers.image" data-lw-type="image" src="assets/photos/photo-coffee-beans.webp" alt="Nahaufnahme frisch gerösteter Kaffeebohnen" width="960" height="636" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">−30 %</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers.name" data-lw-type="text">Kaffee, ganze Bohne</h3>
+              <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">1-kg-Packung · 1 kg = 11,99 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">11,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">16,99 €</span></span></p>
+            </div>
           </article>
-          <article class="card offer reveal" data-lw-item-key="water">
-            <span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">Kistenpreis</span>
-            <h3 data-lw-field="offers.name" data-lw-type="text">Mineralwasser, medium</h3>
-            <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">12 × 1 l zzgl. 3,30 € Pfand · 1 l = 0,42 €</p>
-            <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">4,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">5,99 €</span></span></p>
+          <article class="card offer offer--photo reveal" data-lw-item-key="water">
+            <div class="offer-media"><img data-lw-field="offers.image" data-lw-type="image" src="assets/photos/photo-water-bottles.webp" alt="Glasflaschen mit Bügelverschluss in einer Wanne mit Eiswürfeln" width="960" height="636" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">Kistenpreis</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers.name" data-lw-type="text">Mineralwasser, medium</h3>
+              <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">12 × 1 l zzgl. 3,30 € Pfand · 1 l = 0,42 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">4,99 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">5,99 €</span></span></p>
+            </div>
           </article>
-          <article class="card offer reveal" data-lw-item-key="pasta">
-            <span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">2 für 1</span>
-            <h3 data-lw-field="offers.name" data-lw-type="text">Hartweizen-Spaghetti</h3>
-            <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">2 × 500 g · 1 kg = 1,29 €</p>
-            <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">1,29 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">2,58 €</span></span></p>
+          <article class="card offer offer--photo reveal" data-lw-item-key="pasta">
+            <div class="offer-media"><img data-lw-field="offers.image" data-lw-type="image" src="assets/photos/photo-spaghetti.webp" alt="Spaghetti werden in einen Topf mit kochendem Wasser gegeben" width="960" height="640" loading="lazy" decoding="async"><span class="offer-badge" data-lw-field="offers.badge" data-lw-type="text">2 für 1</span></div>
+            <div class="offer-body">
+              <h3 data-lw-field="offers.name" data-lw-type="text">Hartweizen-Spaghetti</h3>
+              <p class="offer-unit" data-lw-field="offers.unit" data-lw-type="text">2 × 500 g · 1 kg = 1,29 €</p>
+              <p class="offer-price"><span class="offer-now" data-lw-field="offers.price" data-lw-type="text">1,29 €</span><span class="offer-old"><span class="sr-only">statt </span><span data-lw-field="offers.old_price" data-lw-type="text">2,58 €</span></span></p>
+            </div>
           </article>
         </div>
       </div>
@@ -98,8 +113,9 @@
           <article class="card dept reveal" data-lw-item-key="bakery"><h3 data-lw-field="range.name" data-lw-type="text">Backstube</h3><p data-lw-field="range.copy" data-lw-type="textarea">Brötchen ab 7 Uhr, Brot und Kuchen mehrmals täglich frisch aus dem Ofen.</p></article>
           <article class="card dept reveal" data-lw-item-key="dairy"><h3 data-lw-field="range.name" data-lw-type="text">Molkerei &amp; Kühlung</h3><p data-lw-field="range.copy" data-lw-type="textarea">Milch, Joghurt und Eier, dazu eine große Auswahl pflanzlicher Alternativen.</p></article>
           <article class="card dept reveal" data-lw-item-key="drinks"><h3 data-lw-field="range.name" data-lw-type="text">Getränkemarkt</h3><p data-lw-field="range.copy" data-lw-type="textarea">Wasser, Säfte, Wein und Bier in Kisten, mit Pfandautomat direkt am Eingang.</p></article>
-          <article class="card dept reveal" data-lw-item-key="household"><h3 data-lw-field="range.name" data-lw-type="text">Drogerie &amp; Haushalt</h3><p data-lw-field="range.copy" data-lw-type="textarea">Pflege, Reinigung und Babybedarf, damit ein Einkauf für alles reicht.</p></article>
+          <article class="card dept reveal" data-lw-item-key="household"><h3 data-lw-field="range.name" data-lw-type="text">Blumen &amp; Haushalt</h3><p data-lw-field="range.copy" data-lw-type="textarea">Schnittblumen, Drogerie, Reinigung und Babybedarf für den kompletten Einkauf.</p></article>
         </div>
+        <div class="actions"><a class="button button--ghost" href="leistungen.html">Zum Sortiment</a></div>
       </div>
     </section>
 
@@ -112,7 +128,7 @@
         </div>
         <ul class="service-list" data-lw-repeater="services.items">
           <li class="reveal" data-lw-item-key="collect"><strong data-lw-field="services.name" data-lw-type="text">Click &amp; Collect</strong><span data-lw-field="services.copy" data-lw-type="text">Online bestellen und nach zwei Stunden an der Abholstation mitnehmen.</span></li>
-          <li class="reveal" data-lw-item-key="delivery"><strong data-lw-field="services.name" data-lw-type="text">Lieferservice</strong><span data-lw-field="services.copy" data-lw-type="text">Lieferung im Umkreis von 5 km am selben Tag, ab 40 € Bestellwert.</span></li>
+          <li class="reveal" data-lw-item-key="delivery"><strong data-lw-field="services.name" data-lw-type="text">Lieferservice</strong><span data-lw-field="services.copy" data-lw-type="text">Lieferung im Umkreis von 5 km am selben Tag, ab 40 € Bestellwert kostenlos.</span></li>
           <li class="reveal" data-lw-item-key="deposit"><strong data-lw-field="services.name" data-lw-type="text">Pfandrückgabe</strong><span data-lw-field="services.copy" data-lw-type="text">Flaschen und Kisten am Automaten zurückgeben, den Bon an der Kasse einlösen.</span></li>
           <li class="reveal" data-lw-item-key="payment"><strong data-lw-field="services.name" data-lw-type="text">Kontaktlos bezahlen</strong><span data-lw-field="services.copy" data-lw-type="text">Mit Karte, Smartphone oder bar, auch an den Selbstbedienungskassen.</span></li>
         </ul>
@@ -139,17 +155,27 @@
     </section>
 
     <section class="section section--surface" data-lw-section="market_faq">
-      <div class="wrap"><p class="eyebrow" data-lw-field="market_faq.eyebrow" data-lw-type="text">FAQ</p><h2 data-lw-field="market_faq.title" data-lw-type="text">Häufige Fragen</h2>
+      <div class="wrap"><p class="eyebrow" data-lw-field="market_faq.eyebrow" data-lw-type="text">FAQ</p><h2 data-lw-field="market_faq.title" data-lw-type="text">Fragen zu den Angeboten</h2>
         <div class="faq" data-lw-repeater="market_faq.items">
           <details data-lw-item-key="validity"><summary data-lw-field="market_faq.question" data-lw-type="text">Wie lange gelten die Wochenangebote?</summary><p data-lw-field="market_faq.answer" data-lw-type="richtext">Von Montag bis Samstag der laufenden Woche, solange der Vorrat reicht. Jeden Sonntag erscheint die neue Angebotsübersicht.</p></details>
-          <details data-lw-item-key="delivery_area"><summary data-lw-field="market_faq.question" data-lw-type="text">Wohin liefert ihr?</summary><p data-lw-field="market_faq.answer" data-lw-type="richtext">Im Umkreis von 5 km um den Markt. Bestellungen bis 14 Uhr liefern wir noch am selben Tag.</p></details>
-          <details data-lw-item-key="preorder"><summary data-lw-field="market_faq.question" data-lw-type="text">Kann ich Platten oder Torten vorbestellen?</summary><p data-lw-field="market_faq.answer" data-lw-type="richtext">Ja. Sprich uns an der Frischetheke an oder schreib uns über das Kontaktformular, am besten drei Tage im Voraus.</p></details>
+          <details data-lw-item-key="delivery_area"><summary data-lw-field="market_faq.question" data-lw-type="text">Gelten die Angebote auch im Lieferservice?</summary><p data-lw-field="market_faq.answer" data-lw-type="richtext">Ja. Alle Wochenangebote gelten auch für Click &amp; Collect und den Lieferservice im Umkreis von 5 km.</p></details>
+          <details data-lw-item-key="preorder"><summary data-lw-field="market_faq.question" data-lw-type="text">Kann ich Angebotsware reservieren?</summary><p data-lw-field="market_faq.answer" data-lw-type="richtext">Für größere Mengen sprich uns am besten an der Information an oder schreib uns über das Kontaktformular, gern drei Tage im Voraus.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="section"><div class="wrap cta" data-lw-section="market_cta"><h2 data-lw-field="market_cta.title" data-lw-type="richtext">Fragen zum Sortiment oder zur Bestellung?</h2><p class="lead" data-lw-field="market_cta.copy" data-lw-type="textarea">Unser Team hilft dir gern weiter, ob bei Vorbestellungen, Lieferungen oder besonderen Produktwünschen.</p><a class="button" href="kontakt.html" data-lw-field="market_cta.button" data-lw-type="page_reference">Nachricht schreiben</a></div></section>
+    <section class="section"><div class="wrap cta" data-lw-section="market_cta"><h2 data-lw-field="market_cta.title" data-lw-type="richtext">Fragen zu einem Angebot?</h2><p class="lead" data-lw-field="market_cta.copy" data-lw-type="textarea">Unser Team hilft dir gern weiter, ob bei Vorbestellungen, Lieferungen oder besonderen Produktwünschen.</p><a class="button" href="kontakt.html" data-lw-field="market_cta.button" data-lw-type="page_reference">Nachricht schreiben</a></div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-grid"><div><strong data-lw-global="footer.company" data-lw-type="text">REVIEW REQUIRED</strong><p data-lw-global="footer.tagline" data-lw-type="text">REVIEW REQUIRED · Nutzenversprechen</p></div><nav class="footer-links" aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="kontakt.html">Kontakt</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid footer-grid--wide">
+        <div class="footer-brand"><strong data-lw-global="footer.company" data-lw-type="text">Lavendel Markt</strong><p data-lw-global="footer.tagline" data-lw-type="text">Dein Frischmarkt für den Wocheneinkauf – regional, fair und mit Herz.</p></div>
+        <div class="footer-col"><h2 data-lw-global="footer.visit_title" data-lw-type="text">Besuch</h2><p data-lw-global="footer.address" data-lw-type="textarea">Musterstraße 1, 12345 Musterstadt</p><p data-lw-global="footer.hours" data-lw-type="text">Mo–Sa 7:00–22:00 Uhr</p></div>
+        <div class="footer-col"><h2 data-lw-global="footer.contact_title" data-lw-type="text">Kontakt</h2><p><a data-lw-global="footer.phone" data-lw-type="text" href="tel:+49123456789">0123 456789</a></p><p><a data-lw-global="footer.email" data-lw-type="email" href="mailto:kontakt@lavendel-markt.example">kontakt@lavendel-markt.example</a></p></div>
+        <nav class="footer-col" aria-label="Seiten"><h2 data-lw-global="footer.nav_title" data-lw-type="text">Entdecken</h2><div class="footer-links"><a href="supermarkt.html">Wochenangebote</a><a href="leistungen.html">Sortiment</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></div></nav>
+      </div>
+      <div class="footer-bottom"><p data-lw-global="footer.copyright" data-lw-type="text">© 2026 Lavendel Markt · Demo-Website mit fiktiven Angaben · Fotos: StockSnap (CC0)</p><nav class="footer-links" aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div>
+    </div>
+  </footer>
 </body>
 </html>
